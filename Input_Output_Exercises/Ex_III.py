@@ -6,4 +6,3 @@ num = 8
 
 print("%d in octal is %o" % (num, num))
 print(f"{num:d} in binary is {num:b}")
-print(f"{num:d} in hex is {num:h}")
