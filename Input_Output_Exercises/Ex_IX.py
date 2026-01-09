@@ -6,4 +6,7 @@ import os
 
 file_size = os.stat(r"E:\pyNative\Input_Output_Exercises\Ex_VI\newFile.txt").st_size
 
-print(f"File size is {file_size}")
+if file_size == 0:
+    print("File is empty!")
+else:
+    print(f"File size is {file_size}")
