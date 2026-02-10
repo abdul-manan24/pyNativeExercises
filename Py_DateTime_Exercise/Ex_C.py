@@ -6,9 +6,8 @@ from datetime import datetime
 from datetime import timedelta
 
 given_date = datetime(2020, 2, 25)
-date_to_minus = datetime(days=7)
 
-timedelta = given_date - date_to_minus
+new_date = given_date - timedelta(days=7)
 
-print("Given Date {timedelta}")
-print("New Date {new_date}")
+print(f"Given Date {given_date}")
+print(f"New Date {new_date}")
