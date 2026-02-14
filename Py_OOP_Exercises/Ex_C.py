@@ -9,3 +9,6 @@ class Vehicle:
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
+
+
+class Bus extends Vehicle:
