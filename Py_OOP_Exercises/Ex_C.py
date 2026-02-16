@@ -11,4 +11,11 @@ class Vehicle:
         self.mileage = mileage
 
 
-class Bus extends Vehicle:
+class Bus(Vehicle):
+    pass
+
+Bus1 = Bus('Yutong', 240, 18)
+
+print(f"Name of bus: {Bus1.name}")
+print(f"Speed of bus: {Bus1.max_speed}")
+print(f"Mileage of bus: {Bus1.mileage}")
