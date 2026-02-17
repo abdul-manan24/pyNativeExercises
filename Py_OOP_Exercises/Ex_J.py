@@ -1,8 +1,11 @@
 # __Challenge__
 
-# You have given a Shape class and subclasses Circle  and Square. The parent class (Shape) has a area() method.
+# You have given a Shape class and subclasses Circle  and Square.
+# The parent class (Shape) has a area() method.
 
-# Now, Write a OOP code to calculate the area of each shapes (each subclass must write its own implementation of area() method to calculates its area).
+# Now, Write a OOP code to calculate the area of each shapes
+# (each subclass must write its own implementation of area()
+# method to calculates its area).
 
 class Shape:
     def area(self):
@@ -11,10 +14,17 @@ class Shape:
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
+    
+    def area(self):
+        pi = 3.14159
+        return pi * self.radius**2
 
 class Square(Shape):
     def __init__(self, side):
         self.side = side
+
+    def area(self):
+        return self.side**2
 
 # Example of polymorphism
 shapes = [Circle(5), Square(7), Circle(3)]
